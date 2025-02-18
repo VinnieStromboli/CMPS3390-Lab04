@@ -6,6 +6,8 @@ import Views.StudentView;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class StudentController {
     private StudentData model;
@@ -14,6 +16,12 @@ public class StudentController {
     public StudentController(StudentData model, StudentView view){
         this.model = model;
         this.view = view;
+
+        ArrayList<Student> students = model.getStudents();
+
+        students.forEach(s -> {
+            view.addStudentToList(s.toString());
+        });
 
         view.attachAddStudentListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

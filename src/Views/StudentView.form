@@ -103,12 +103,16 @@
           <component id="a3d1c" class="javax.swing.JButton" binding="addStudentButton" default-binding="true">
             <constraints/>
             <properties>
+              <background color="-16449792"/>
+              <foreground color="-16777216"/>
               <text value="Add Student"/>
             </properties>
           </component>
           <component id="29fff" class="javax.swing.JButton" binding="removeStudentButton" default-binding="true">
             <constraints/>
             <properties>
+              <background color="-65532"/>
+              <foreground color="-16777216"/>
               <text value="Remove Student"/>
             </properties>
           </component>
